@@ -23,6 +23,7 @@
 
 .container {
   @include flexCenter();
+  background: rgb(13, 26, 36);
   width: 100%;
   height: 100vh;
 }
@@ -39,13 +40,27 @@
   border-radius: 25px;
   font-family: $font;
   font-size: 30px;
+  position: fixed;
+  left: 5px;
   &:focus {
     outline: none;
   }
 }
 
+.catImage {
+  width: 75%;
+  height: 75%;
+  object-fit: contain;
+  border-color: transparent;
+}
+
+img[src=""] {
+  display: none;
+}
+
 .footer {
   @include headerFooter(10px);
+  background: rgb(191, 208, 214);
   bottom: 0;
   justify-content: flex-end;
   padding-right: 20px;

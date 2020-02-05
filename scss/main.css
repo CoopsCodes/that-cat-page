@@ -110,6 +110,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: #0d1a24;
   width: 100%;
   height: 100vh;
 }
@@ -139,10 +140,24 @@
   border-radius: 25px;
   font-family: "Raleway", sans-serif;
   font-size: 30px;
+  position: fixed;
+  left: 5px;
 }
 
 .searchButton:focus {
   outline: none;
+}
+
+.catImage {
+  width: 75%;
+  height: 75%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-color: transparent;
+}
+
+img[src=""] {
+  display: none;
 }
 
 .footer {
@@ -160,6 +175,7 @@
   height: 60px;
   font-size: 10px;
   font-family: "Raleway", sans-serif;
+  background: #bfd0d6;
   bottom: 0;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
